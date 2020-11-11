@@ -1,8 +1,18 @@
+$head-color: #ffb300;
+$title-color: lightgray;
+$para-color: gray;
+$dark: black;
+$light: white;
+
+section{
+    height: 30vw;
+}
+
 .header{
-    background-color: black;
+    background-color: $dark;
     li{
         a{
-            color: #ffb300;
+            color: $head-color;
         }
     }
 }
@@ -10,14 +20,13 @@
 .info{
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: $dark;
     height: 30vw;
     img{
         flex: 20%;
         display: block;
         margin: auto;
-        background-color: white;
-        border: thin white solid;
+        background-color: $light;
         height: 25vw;
         margin-left: 3em;
     }
@@ -28,17 +37,142 @@
             display: block;
             transform: translateY(20%);
             h1{
-                color: #ffb300;
+                color: $head-color;
                 margin: 1em 1em 0 1em;
             }
             h3{
-                color: lightgray;
+                color: $title-color;
                 margin: 0 1em 0 1em;
             }
             p{
-                color: gray;
+                color: $para-color;
                 margin: 0 2em 0 1em;
             }
+        }
+    }
+}
+
+.education{
+    background-color: $dark;
+    h1{
+        color: $head-color;
+        text-align: center;
+
+        &::before{
+            content: "";
+            position: absolute;
+            transform: translateX(-40%);
+            border-bottom: thin $light solid;
+            width: 30em;
+        }
+    }
+    .certificate{
+        margin-top: 6em;
+        margin-left: 5em;
+        >div{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1em 0.5em 0 0.5em;
+            h4{
+                flex: 20%;
+                color: $title-color;
+            }
+            p{
+                flex: 70%;
+                color: $para-color;
+            }
+        }
+    }
+}
+
+.skills{
+    background-color: $dark;
+    h1{
+        color: $head-color;
+        text-align: center;
+
+        &::before{
+            content: "";
+            position: absolute;
+            transform: translateX(-45%);
+            border-bottom: thin $light solid;
+            width: 30em;
+        }
+    }
+    h3{
+        color: $title-color;
+        transform: translateX(40%);
+        margin-top: 2em;
+    }
+    ul{
+        text-align: center;
+        margin-top: 1em;
+        .html{
+            color: orangered;
+        }
+        .css{
+            color: blue;
+        }
+        .js{
+            color: yellow;
+        }
+        .react{
+            color: lightskyblue;
+        }
+        .node{
+            color: green;
+        }
+        .sass{
+            color: palevioletred;
+        }
+        .wp{
+            color: #3a9bfc;
+        }
+        .npm{
+            color: red;
+        }
+        li{
+            i{
+                color: $para-color;
+                font-size: 2.5em;
+                margin: 1em;
+            }
+        }
+    }
+}
+
+.interests{
+    background-color: $dark;
+    h1{
+        color: $head-color;
+        text-align: center;
+
+        &::before{
+            content: "";
+            position: absolute;
+            transform: translateX(-45%);
+            border-bottom: thin $light solid;
+            width: 30em;
+        }
+    }
+    p{
+        text-align: center;
+        color: $para-color;
+    }
+}
+
+.experience{
+    background-color: $dark;
+    h1{
+        color: $head-color;
+        text-align: center;
+
+        &::before{
+            content: "";
+            position: absolute;
+            transform: translateX(-45%);
+            border-bottom: thin $light solid;
+            width: 30em;
         }
     }
 }

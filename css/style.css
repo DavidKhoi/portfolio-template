@@ -1,3 +1,7 @@
+section {
+  height: 30vw;
+}
+
 .header {
   background-color: black;
 }
@@ -23,7 +27,6 @@
   display: block;
   margin: auto;
   background-color: white;
-  border: thin white solid;
   height: 25vw;
   margin-left: 3em;
 }
@@ -54,5 +57,160 @@
 .info .details .text p {
   color: gray;
   margin: 0 2em 0 1em;
+}
+
+.education {
+  background-color: black;
+}
+
+.education h1 {
+  color: #ffb300;
+  text-align: center;
+}
+
+.education h1::before {
+  content: "";
+  position: absolute;
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+  border-bottom: thin white solid;
+  width: 30em;
+}
+
+.education .certificate {
+  margin-top: 6em;
+  margin-left: 5em;
+}
+
+.education .certificate > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1em 0.5em 0 0.5em;
+}
+
+.education .certificate > div h4 {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+  color: lightgray;
+}
+
+.education .certificate > div p {
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+  color: gray;
+}
+
+.skills {
+  background-color: black;
+}
+
+.skills h1 {
+  color: #ffb300;
+  text-align: center;
+}
+
+.skills h1::before {
+  content: "";
+  position: absolute;
+  -webkit-transform: translateX(-45%);
+          transform: translateX(-45%);
+  border-bottom: thin white solid;
+  width: 30em;
+}
+
+.skills h3 {
+  color: lightgray;
+  -webkit-transform: translateX(40%);
+          transform: translateX(40%);
+  margin-top: 2em;
+}
+
+.skills ul {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.skills ul .html {
+  color: orangered;
+}
+
+.skills ul .css {
+  color: blue;
+}
+
+.skills ul .js {
+  color: yellow;
+}
+
+.skills ul .react {
+  color: lightskyblue;
+}
+
+.skills ul .node {
+  color: green;
+}
+
+.skills ul .sass {
+  color: palevioletred;
+}
+
+.skills ul .wp {
+  color: #3a9bfc;
+}
+
+.skills ul .npm {
+  color: red;
+}
+
+.skills ul li i {
+  color: gray;
+  font-size: 2.5em;
+  margin: 1em;
+}
+
+.interests {
+  background-color: black;
+}
+
+.interests h1 {
+  color: #ffb300;
+  text-align: center;
+}
+
+.interests h1::before {
+  content: "";
+  position: absolute;
+  -webkit-transform: translateX(-45%);
+          transform: translateX(-45%);
+  border-bottom: thin white solid;
+  width: 30em;
+}
+
+.interests p {
+  text-align: center;
+  color: gray;
+}
+
+.experience {
+  background-color: black;
+}
+
+.experience h1 {
+  color: #ffb300;
+  text-align: center;
+}
+
+.experience h1::before {
+  content: "";
+  position: absolute;
+  -webkit-transform: translateX(-45%);
+          transform: translateX(-45%);
+  border-bottom: thin white solid;
+  width: 30em;
 }
 /*# sourceMappingURL=style.css.map */
