@@ -1,0 +1,58 @@
+.header {
+  background-color: black;
+}
+
+.header li a {
+  color: #ffb300;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: black;
+  height: 30vw;
+}
+
+.info img {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+  display: block;
+  margin: auto;
+  background-color: white;
+  border: thin white solid;
+  height: 25vw;
+  margin-left: 3em;
+}
+
+.info .details {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+  text-align: right;
+}
+
+.info .details .text {
+  display: block;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+.info .details .text h1 {
+  color: #ffb300;
+  margin: 1em 1em 0 1em;
+}
+
+.info .details .text h3 {
+  color: lightgray;
+  margin: 0 1em 0 1em;
+}
+
+.info .details .text p {
+  color: gray;
+  margin: 0 2em 0 1em;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+.header{
+    background-color: black;
+    li{
+        a{
+            color: #ffb300;
+        }
+    }
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    height: 30vw;
+    img{
+        flex: 20%;
+        display: block;
+        margin: auto;
+        background-color: white;
+        border: thin white solid;
+        height: 25vw;
+        margin-left: 3em;
+    }
+    .details{
+        flex: 60%;
+        text-align: right;
+        .text{
+            display: block;
+            transform: translateY(20%);
+            h1{
+                color: #ffb300;
+                margin: 1em 1em 0 1em;
+            }
+            h3{
+                color: lightgray;
+                margin: 0 1em 0 1em;
+            }
+            p{
+                color: gray;
+                margin: 0 2em 0 1em;
+            }
+        }
+    }
+}
