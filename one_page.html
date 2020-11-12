@@ -119,6 +119,7 @@
             </ul>
         </div>
     </section>
+
     <section class="interests" id="interests">
         <h1><span>Interests</span></h1>
         <div class="text">
@@ -137,8 +138,43 @@
             </p>
         </div>
     </section>
+
     <section class="contact" id="contact">
         <h1><span>Contact Us</span></h1>
+        <form class="contact-form" data-toggle="validator">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <!-- <i class="contact-icon fa fa-user"></i> -->
+                  <input type="text" class="form-control" id="name" placeholder="Full Name" required data-error="Please enter your name">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <!-- <i class="contact-icon fa fa-envelope-o"></i> -->
+                  <input type="email" class="form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group">
+                  <!-- <i class="contact-icon fa fa-pencil-square-o"></i> -->
+                  <input type="text" class="form-control" id="subject" placeholder="Subject" required data-error="Please enter your Subject">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <textarea id="message" rows="8" placeholder="Message" required data-error="Please enter your message"></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <button type="submit" id="form-submit" class="btn btn-common btn-form-submit">Send Message</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </form>
     </section>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>

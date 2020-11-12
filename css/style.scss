@@ -148,5 +148,18 @@ section{
 }
 
 .contact{
-    
+    form{
+        width: 60%;
+        display: block;
+        margin: auto;
+        margin-top: 4em;
+        #message{
+            margin-top: 2em;
+            width: 100%;
+        }
+        button{
+            background-color: $head-color;
+            color: $light;
+        }
+    }
 }
