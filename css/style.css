@@ -1,5 +1,20 @@
 section {
-  height: 30vw;
+  height: 50vw;
+  background-color: black;
+}
+
+section h1 {
+  color: #ffb300;
+  text-align: center;
+}
+
+section h1::before {
+  content: "";
+  position: absolute;
+  -webkit-transform: translateX(-45%);
+          transform: translateX(-45%);
+  border-bottom: thin white solid;
+  width: 30em;
 }
 
 .header {
@@ -8,6 +23,8 @@ section {
 
 .header li a {
   color: #ffb300;
+  margin-right: 2em;
+  font-size: 1em;
 }
 
 .info {
@@ -59,24 +76,6 @@ section {
   margin: 0 2em 0 1em;
 }
 
-.education {
-  background-color: black;
-}
-
-.education h1 {
-  color: #ffb300;
-  text-align: center;
-}
-
-.education h1::before {
-  content: "";
-  position: absolute;
-  -webkit-transform: translateX(-40%);
-          transform: translateX(-40%);
-  border-bottom: thin white solid;
-  width: 30em;
-}
-
 .education .certificate {
   margin-top: 6em;
   margin-left: 5em;
@@ -105,112 +104,58 @@ section {
   color: gray;
 }
 
-.skills {
-  background-color: black;
-}
-
-.skills h1 {
-  color: #ffb300;
-  text-align: center;
-}
-
-.skills h1::before {
-  content: "";
-  position: absolute;
-  -webkit-transform: translateX(-45%);
-          transform: translateX(-45%);
-  border-bottom: thin white solid;
-  width: 30em;
-}
-
 .skills h3 {
   color: lightgray;
-  -webkit-transform: translateX(40%);
-          transform: translateX(40%);
-  margin-top: 2em;
-}
-
-.skills ul {
   text-align: center;
   margin-top: 1em;
 }
 
-.skills ul .html {
-  color: orangered;
-}
-
-.skills ul .css {
-  color: blue;
-}
-
-.skills ul .js {
-  color: yellow;
-}
-
-.skills ul .react {
-  color: lightskyblue;
-}
-
-.skills ul .node {
-  color: green;
-}
-
-.skills ul .sass {
-  color: palevioletred;
-}
-
-.skills ul .wp {
-  color: #3a9bfc;
-}
-
-.skills ul .npm {
-  color: red;
-}
-
-.skills ul li i {
-  color: gray;
-  font-size: 2.5em;
-  margin: 1em;
-}
-
-.interests {
-  background-color: black;
-}
-
-.interests h1 {
-  color: #ffb300;
+.skills .langs ul {
   text-align: center;
 }
 
-.interests h1::before {
-  content: "";
+.skills .langs ul li {
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.skills .other ul {
+  text-align: center;
+}
+
+.skills .other ul li {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.interests .text {
+  position: relative;
+}
+
+.interests .text img {
+  width: 80%;
+  display: block;
+  margin: auto;
+  opacity: 0.5;
+}
+
+.interests .text .first {
   position: absolute;
-  -webkit-transform: translateX(-45%);
-          transform: translateX(-45%);
-  border-bottom: thin white solid;
-  width: 30em;
+  top: 2em;
+  left: 10em;
+  text-align: left;
+  color: white;
+  width: 40%;
+  margin-top: 1.5em;
 }
 
-.interests p {
-  text-align: center;
-  color: gray;
-}
-
-.experience {
-  background-color: black;
-}
-
-.experience h1 {
-  color: #ffb300;
-  text-align: center;
-}
-
-.experience h1::before {
-  content: "";
+.interests .text .second {
   position: absolute;
-  -webkit-transform: translateX(-45%);
-          transform: translateX(-45%);
-  border-bottom: thin white solid;
-  width: 30em;
+  top: 10em;
+  left: 10em;
+  text-align: left;
+  color: white;
+  width: 40%;
+  margin-top: 2em;
 }
 /*# sourceMappingURL=style.css.map */
