@@ -23,16 +23,30 @@ section{
 
 .header{
     background-color: $dark;
-    li{
-        a{
-            color: $head-color;
-            margin-right: 2em;
-            font-size: 1em;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    ul{
+        border: none;
+        li{
+            a{
+                color: red;
+                margin-right: 2em;
+                font-size: 1em;
+            }
         }
     }
+    // li{
+    //     a{
+    //         color: $head-color;
+    //         margin-right: 2em;
+    //         font-size: 1em;
+    //     }
+    // }
 }
 
-.info{
+#about{
     display: flex;
     flex-wrap: wrap;
     background-color: $dark;
@@ -67,7 +81,7 @@ section{
     }
 }
 
-.education{
+#education{
     .certificate{
         margin-top: 6em;
         margin-left: 5em;
@@ -87,7 +101,7 @@ section{
     }
 }
 
-.skills{
+#skills{
     h3{
         color: $title-color;
         text-align: center;
@@ -115,7 +129,7 @@ section{
     
 }
 
-.interests{
+#interests{
     .text{
         position: relative;
         img{
@@ -147,7 +161,7 @@ section{
     }
 }
 
-.contact{
+#contact{
     form{
         width: 60%;
         display: block;
