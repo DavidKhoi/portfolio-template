@@ -4,18 +4,27 @@ $para-color: gray;
 $dark: black;
 $light: white;
 
-section{
+$head: 'Playball', cursive;
+$text: 'Castoro', serif;
+
+html{
+    margin-top: 0;
+}
+
+.section{
     height: 50vw;
     background-color: $dark;
     h1{
         color: $head-color;
         text-align: center;
-
+        font-family: $head;
+        // margin-top: 0.5em;
         &::before{
             content: "";
             position: absolute;
             transform: translateX(-45%);
             border-bottom: thin $light solid;
+            // margin-top: 0.5em;
             width: 30em;
         }
     }
@@ -23,26 +32,30 @@ section{
 
 .header{
     background-color: $dark;
+    position: fixed;
+    right: 2em;
+    z-index: 99;
     li{
         a{
             color: $head-color;
+            font-family: $text;
             margin-right: 2em;
             font-size: 1em;
         }
     }
 }
 
-.info{
+.about{
     display: flex;
     flex-wrap: wrap;
     background-color: $dark;
-    height: 30vw;
+    height: 55vw;
     img{
         flex: 20%;
         display: block;
         margin: auto;
-        background-color: $light;
-        height: 25vw;
+        // background-color: $light;
+        height: 35vw;
         margin-left: 3em;
     }
     .details{
@@ -50,10 +63,11 @@ section{
         text-align: right;
         .text{
             display: block;
-            transform: translateY(20%);
+            transform: translateY(60%);
             h1{
                 color: $head-color;
                 margin: 1em 1em 0 1em;
+                font-family: $head;
             }
             h3{
                 color: $title-color;
@@ -62,19 +76,55 @@ section{
             p{
                 color: $para-color;
                 margin: 0 2em 0 1em;
+                font-family: $text;
+            }
+
+            .icon{
+                margin-right: 1.5em;
+                a{
+                    font-size: 2.5em;
+                    margin: 0.5em;
+                }
+                .git{
+                    color: $light;
+                }
+            
+                .fb{
+                    color: #1877F2;
+                }
+            
+                .mail{
+                    color: red;
+                }
+            }
+
+            .link{
+                h4{
+                    text-align: left;
+                    color: $title-color;
+                    margin-left: 1.5em;
+                }
+                img{
+                    width: 8em;
+                    height: 3em;
+                    margin-top: 1em;
+                    // text-align: right;
+                }
             }
         }
     }
 }
 
-.education{
+#education{
     .certificate{
         margin-top: 6em;
         margin-left: 5em;
+        h2{
+            color: red;
+        }
         >div{
             display: flex;
-            flex-wrap: wrap;
-            margin: 1em 0.5em 0 0.5em;
+            margin-top: 1em;
             h4{
                 flex: 20%;
                 color: $title-color;
@@ -87,11 +137,12 @@ section{
     }
 }
 
-.skills{
+#skills{
     h3{
         color: $title-color;
         text-align: center;
         margin-top: 1em;
+        font-family: $text;
     }
     .langs{
         ul{
@@ -115,7 +166,7 @@ section{
     
 }
 
-.interests{
+#interests{
     .text{
         position: relative;
         img{
@@ -127,6 +178,7 @@ section{
 
         .first{
             position: absolute;
+            font-family: $text;
             top: 2em;
             left: 10em;
             text-align: left;
@@ -137,6 +189,7 @@ section{
 
         .second{
             position: absolute;
+            font-family: $text;
             top: 10em;
             left: 10em;
             text-align: left;
@@ -148,6 +201,13 @@ section{
 }
 
 .contact{
+    height: 55vw;
+    background-color: $dark;
+    h1{
+        text-align: center;
+        color: $head-color;
+        font-family: $head;
+    }
     form{
         width: 60%;
         display: block;
@@ -160,6 +220,42 @@ section{
         button{
             background-color: $head-color;
             color: $light;
+        }
+    }
+}
+
+footer{
+    background-color: $para-color;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    a{
+        text-decoration: none;
+        i{
+            flex: 0 0 40%;
+            margin: 0.1em 3em;
+            font-size: 3em;
+        }
+        p{
+            margin-left: 45em;
+            margin-bottom: 0;
+        }
+    }
+    
+    .git{
+        color: $dark;
+    }
+
+    .fb{
+        color: #1877F2;
+    }
+
+    .mail{
+        i{
+            color: red;
+            p{
+                color: $light;
+            }
         }
     }
 }

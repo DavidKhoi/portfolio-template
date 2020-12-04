@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Playball&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -14,22 +15,21 @@
             <li class="nav-item">
                 <a class="nav-link active" href="#about">About</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#interests">Interests</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Information</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#education">Education</a>
+                <a class="dropdown-item" href="#skills">Skills</a>
+                <a class="dropdown-item" href="#interests">Interests</a>
+              </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact Us</a>
             </li>
         </ul>
     </div>
-    <div class="info">
-        <img src="testing-img.png" alt="">
+    <div class="about" id="about">
+        <img src="img/Black & White.png" alt="">
         <div class="details">
             <div class="text">
                 <h1>Khoi Tran</h1>
@@ -38,33 +38,43 @@
                     I'm currently studying about Front-end development, which is my passion and I have studied this for 2 years
                     I'm accepting freelance work now, I'd love to get coffee and get to know you, so don’t hesitate to get in touch.
                 </p>
+                <div class="icon">
+                  <a class="fb" href="https://www.facebook.com/khoitran1720/"><i class="fab fa-facebook"></i></a>
+                  <a class="git" href="https://github.com/DavidKhoi17"><i class="fab fa-github"></i></a>
+                  <a class="mail" href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+
+                <div class="link">
+                  <h4>Recent work:</h4>
+                  <a href="https://emart2.tk/index.php/why-us/"><img src="img/eMart-logo.png" alt="eMart"></a>
+                </div>
             </div>
         </div>
     </div>
     <!-- <section class="about"></section> -->
-    <section class="education" id="education">
+    <section class="section" id="education">
         <h1><span>Education</span></h1>
         <div class="certificate">
-            <div class="first">
-                <h4>2015 - 2018</h4>
-                <p>Binh Phu High School (Vietnam)</p>
-            </div>
-            <div class="second">
-                <h4>2018</h4>
-                <p>Administering Microsoft SQL Server 2014 Databases (Vietnam)</p>
-            </div>
-            <div class="third">
-                <h4>Mar 2019 - Nov 2019</h4>
-                <p>Diploma in Website and Application Development (Yoobee College)</p>
-            </div>
-            <div class="fourth">
-                <h4>Feb 2020 - Dec 2020</h4>
-                <p>Diploma in Website and UX Design (Yoobee College)</p>
-            </div>
+          <div class="certi">
+            <h4>2015 - 2018</h4>
+            <p>Binh Phu High School (Vietnam)</p>
+          </div>
+          <div class="certi">
+            <h4>2018</h4>
+            <p>Administering Microsoft SQL Server 2014 Databases (Vietnam)</p>
+          </div>
+          <div class="certi">
+            <h4>Mar 2019 - Nov 2019</h4>
+            <p>Diploma in Website and Application Development (Yoobee College)</p>
+          </div>
+          <div class="certi">
+            <h4>Feb 2020 - Dec 2020</h4>
+            <p>Diploma in Website and UX Design (Yoobee College)</p>
+          </div>
         </div>
     </section>
 
-    <section class="skills" id="skills">
+    <section class="section" id="skills">
         <h1><span>Skills</span></h1>
         <div class="langs">
             <h3>Programming Languages</h3>
@@ -120,12 +130,12 @@
         </div>
     </section>
 
-    <section class="interests" id="interests">
+    <section class="section" id="interests">
         <h1><span>Interests</span></h1>
         <div class="text">
             <img src="img/interest-bkg.jpeg" alt="">
             <p class="first">
-                Apart from being a web developer, I enjoy to do research about computer tẹchnology. During my free times, I enjoy playing games, watching movies, playing badminton with my friends.
+                Apart from being a web developer, I enjoy to do research about computer technology. During my free times, I enjoy playing games, watching movies, playing badminton with my friends.
                 When forced indoors, I follow a number of actions genre movies, and I spend a amount of my free time exploring the latest technology advancements in the front-end web development world.
             </p>
             
@@ -139,7 +149,7 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <div class="contact" id="contact">
         <h1><span>Contact Us</span></h1>
         <form class="contact-form" data-toggle="validator">
             <div class="row">
@@ -175,9 +185,10 @@
               </div>
             </div>
           </form>
-    </section>
+    </div>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,14 +1,19 @@
-section {
+html {
+  margin-top: 0;
+}
+
+.section {
   height: 50vw;
   background-color: black;
 }
 
-section h1 {
+.section h1 {
   color: #ffb300;
   text-align: center;
+  font-family: "Playball", cursive;
 }
 
-section h1::before {
+.section h1::before {
   content: "";
   position: absolute;
   -webkit-transform: translateX(-45%);
@@ -19,128 +24,170 @@ section h1::before {
 
 .header {
   background-color: black;
+  position: fixed;
+  right: 2em;
+  z-index: 99;
 }
 
 .header li a {
   color: #ffb300;
+  font-family: "Castoro", serif;
   margin-right: 2em;
   font-size: 1em;
 }
 
-.info {
+.about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: black;
-  height: 30vw;
+  height: 55vw;
 }
 
-.info img {
+.about img {
   -webkit-box-flex: 20%;
       -ms-flex: 20%;
           flex: 20%;
   display: block;
   margin: auto;
-  background-color: white;
-  height: 25vw;
+  height: 35vw;
   margin-left: 3em;
 }
 
-.info .details {
+.about .details {
   -webkit-box-flex: 60%;
       -ms-flex: 60%;
           flex: 60%;
   text-align: right;
 }
 
-.info .details .text {
+.about .details .text {
   display: block;
-  -webkit-transform: translateY(20%);
-          transform: translateY(20%);
+  -webkit-transform: translateY(60%);
+          transform: translateY(60%);
 }
 
-.info .details .text h1 {
+.about .details .text h1 {
   color: #ffb300;
   margin: 1em 1em 0 1em;
+  font-family: "Playball", cursive;
 }
 
-.info .details .text h3 {
+.about .details .text h3 {
   color: lightgray;
   margin: 0 1em 0 1em;
 }
 
-.info .details .text p {
+.about .details .text p {
   color: gray;
   margin: 0 2em 0 1em;
+  font-family: "Castoro", serif;
 }
 
-.education .certificate {
+.about .details .text .icon {
+  margin-right: 1.5em;
+}
+
+.about .details .text .icon a {
+  font-size: 2.5em;
+  margin: 0.5em;
+}
+
+.about .details .text .icon .git {
+  color: white;
+}
+
+.about .details .text .icon .fb {
+  color: #1877F2;
+}
+
+.about .details .text .icon .mail {
+  color: red;
+}
+
+.about .details .text .link h4 {
+  text-align: left;
+  color: lightgray;
+  margin-left: 1.5em;
+}
+
+.about .details .text .link img {
+  width: 8em;
+  height: 3em;
+  margin-top: 1em;
+}
+
+#education .certificate {
   margin-top: 6em;
   margin-left: 5em;
 }
 
-.education .certificate > div {
+#education .certificate h2 {
+  color: red;
+}
+
+#education .certificate > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 1em 0.5em 0 0.5em;
+  margin-top: 1em;
 }
 
-.education .certificate > div h4 {
+#education .certificate > div h4 {
   -webkit-box-flex: 20%;
       -ms-flex: 20%;
           flex: 20%;
   color: lightgray;
 }
 
-.education .certificate > div p {
+#education .certificate > div p {
   -webkit-box-flex: 70%;
       -ms-flex: 70%;
           flex: 70%;
   color: gray;
 }
 
-.skills h3 {
+#skills h3 {
   color: lightgray;
   text-align: center;
   margin-top: 1em;
+  font-family: "Castoro", serif;
 }
 
-.skills .langs ul {
+#skills .langs ul {
   text-align: center;
 }
 
-.skills .langs ul li {
+#skills .langs ul li {
   margin-left: 4em;
   margin-right: 4em;
 }
 
-.skills .other ul {
+#skills .other ul {
   text-align: center;
 }
 
-.skills .other ul li {
+#skills .other ul li {
   margin-left: 2em;
   margin-right: 2em;
 }
 
-.interests .text {
+#interests .text {
   position: relative;
 }
 
-.interests .text img {
+#interests .text img {
   width: 80%;
   display: block;
   margin: auto;
   opacity: 0.5;
 }
 
-.interests .text .first {
+#interests .text .first {
   position: absolute;
+  font-family: "Castoro", serif;
   top: 2em;
   left: 10em;
   text-align: left;
@@ -149,14 +196,26 @@ section h1::before {
   margin-top: 1.5em;
 }
 
-.interests .text .second {
+#interests .text .second {
   position: absolute;
+  font-family: "Castoro", serif;
   top: 10em;
   left: 10em;
   text-align: left;
   color: white;
   width: 40%;
   margin-top: 2em;
+}
+
+.contact {
+  height: 55vw;
+  background-color: black;
+}
+
+.contact h1 {
+  text-align: center;
+  color: #ffb300;
+  font-family: "Playball", cursive;
 }
 
 .contact form {
@@ -173,6 +232,49 @@ section h1::before {
 
 .contact form button {
   background-color: #ffb300;
+  color: white;
+}
+
+footer {
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a i {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  margin: 0.1em 3em;
+  font-size: 3em;
+}
+
+footer a p {
+  margin-left: 45em;
+  margin-bottom: 0;
+}
+
+footer .git {
+  color: black;
+}
+
+footer .fb {
+  color: #1877F2;
+}
+
+footer .mail i {
+  color: red;
+}
+
+footer .mail i p {
   color: white;
 }
 /*# sourceMappingURL=style.css.map */
