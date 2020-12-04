@@ -25,7 +25,6 @@ html {
 .header {
   background-color: black;
   position: fixed;
-<<<<<<< HEAD
   right: 2em;
   z-index: 99;
 }
@@ -33,28 +32,11 @@ html {
 .header li a {
   color: #ffb300;
   font-family: "Castoro", serif;
-=======
-  right: 0;
-  top: 0;
-  z-index: 99;
-}
-
-.header ul {
-  border: none;
-}
-
-.header ul li a {
-  color: red;
->>>>>>> f26538edbbb5bd4405bc922e5249968f3d9ca7ad
   margin-right: 2em;
   font-size: 1em;
 }
 
-<<<<<<< HEAD
-.about {
-=======
 #about {
->>>>>>> f26538edbbb5bd4405bc922e5249968f3d9ca7ad
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,11 +46,7 @@ html {
   height: 55vw;
 }
 
-<<<<<<< HEAD
-.about img {
-=======
 #about img {
->>>>>>> f26538edbbb5bd4405bc922e5249968f3d9ca7ad
   -webkit-box-flex: 20%;
       -ms-flex: 20%;
           flex: 20%;
@@ -78,104 +56,78 @@ html {
   margin-left: 3em;
 }
 
-<<<<<<< HEAD
-.about .details {
-=======
 #about .details {
->>>>>>> f26538edbbb5bd4405bc922e5249968f3d9ca7ad
   -webkit-box-flex: 60%;
       -ms-flex: 60%;
           flex: 60%;
   text-align: right;
 }
 
-<<<<<<< HEAD
-.about .details .text {
-=======
 #about .details .text {
->>>>>>> f26538edbbb5bd4405bc922e5249968f3d9ca7ad
   display: block;
   -webkit-transform: translateY(60%);
           transform: translateY(60%);
 }
 
-<<<<<<< HEAD
-.about .details .text h1 {
-=======
 #about .details .text h1 {
->>>>>>> f26538edbbb5bd4405bc922e5249968f3d9ca7ad
   color: #ffb300;
   margin: 1em 1em 0 1em;
   font-family: "Playball", cursive;
 }
 
-<<<<<<< HEAD
-.about .details .text h3 {
-=======
 #about .details .text h3 {
->>>>>>> f26538edbbb5bd4405bc922e5249968f3d9ca7ad
   color: lightgray;
   margin: 0 1em 0 1em;
 }
 
-<<<<<<< HEAD
-.about .details .text p {
-=======
 #about .details .text p {
->>>>>>> f26538edbbb5bd4405bc922e5249968f3d9ca7ad
   color: gray;
   margin: 0 2em 0 1em;
   font-family: "Castoro", serif;
 }
 
-.about .details .text .icon {
+#about .details .text .icon {
   margin-right: 1.5em;
 }
 
-.about .details .text .icon a {
+#about .details .text .icon a {
   font-size: 2.5em;
   margin: 0.5em;
 }
 
-.about .details .text .icon .git {
+#about .details .text .icon .git {
   color: white;
 }
 
-.about .details .text .icon .fb {
+#about .details .text .icon .fb {
   color: #1877F2;
 }
 
-.about .details .text .icon .mail {
+#about .details .text .icon .mail {
   color: red;
 }
 
-.about .details .text .link h4 {
+#about .details .text .link h4 {
   text-align: left;
   color: lightgray;
   margin-left: 1.5em;
 }
 
-<<<<<<< HEAD
-.about .details .text .link img {
+#about .details .text .link img {
   width: 8em;
   height: 3em;
   margin-top: 1em;
 }
 
-=======
->>>>>>> f26538edbbb5bd4405bc922e5249968f3d9ca7ad
 #education .certificate {
   margin-top: 6em;
   margin-left: 5em;
 }
 
-<<<<<<< HEAD
 #education .certificate h2 {
   color: red;
 }
 
-=======
->>>>>>> f26538edbbb5bd4405bc922e5249968f3d9ca7ad
 #education .certificate > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,22 +207,7 @@ html {
   margin-top: 2em;
 }
 
-<<<<<<< HEAD
-.contact {
-  height: 55vw;
-  background-color: black;
-}
-
-.contact h1 {
-  text-align: center;
-  color: #ffb300;
-  font-family: "Playball", cursive;
-}
-
-.contact form {
-=======
 #contact form {
->>>>>>> f26538edbbb5bd4405bc922e5249968f3d9ca7ad
   width: 60%;
   display: block;
   margin: auto;
