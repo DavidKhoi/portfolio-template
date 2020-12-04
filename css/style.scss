@@ -33,6 +33,7 @@ html{
 .header{
     background-color: $dark;
     position: fixed;
+<<<<<<< HEAD
     right: 2em;
     z-index: 99;
     li{
@@ -41,11 +42,35 @@ html{
             font-family: $text;
             margin-right: 2em;
             font-size: 1em;
+=======
+    right: 0;
+    top: 0;
+    z-index: 99;
+    ul{
+        border: none;
+        li{
+            a{
+                color: red;
+                margin-right: 2em;
+                font-size: 1em;
+            }
+>>>>>>> f26538edbbb5bd4405bc922e5249968f3d9ca7ad
         }
     }
+    // li{
+    //     a{
+    //         color: $head-color;
+    //         margin-right: 2em;
+    //         font-size: 1em;
+    //     }
+    // }
 }
 
+<<<<<<< HEAD
 .about{
+=======
+#about{
+>>>>>>> f26538edbbb5bd4405bc922e5249968f3d9ca7ad
     display: flex;
     flex-wrap: wrap;
     background-color: $dark;
@@ -200,6 +225,7 @@ html{
     }
 }
 
+<<<<<<< HEAD
 .contact{
     height: 55vw;
     background-color: $dark;
@@ -208,6 +234,9 @@ html{
         color: $head-color;
         font-family: $head;
     }
+=======
+#contact{
+>>>>>>> f26538edbbb5bd4405bc922e5249968f3d9ca7ad
     form{
         width: 60%;
         display: block;
